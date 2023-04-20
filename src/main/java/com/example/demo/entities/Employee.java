@@ -1,5 +1,6 @@
 package com.example.demo.entities;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Set;
 
@@ -40,7 +41,7 @@ public class Employee {
 
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	@CreationTimestamp
-	private Date createdAt;
+	private LocalDate createdAt;
 //@OneToMany(targetEntity = Department.class,cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 //@JoinColumn(name ="DEPTID",referencedColumnName ="DEPTID")
 

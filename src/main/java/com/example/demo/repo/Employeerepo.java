@@ -12,7 +12,7 @@ public interface Employeerepo extends  JpaRepository <Employee,Integer> {
 
 //	Optional<Employee> stream();
 //	
-	    @Query(value="SELECT DEPTID FROM DEPARTMENT UNION ALL SELECT COUNT(*) FROM EMPLOYEE", nativeQuery= true)
+	    @Query(value="SELECT DEPTID FROM DEPRTMENT UNION ALL SELECT COUNT(*) FROM EMPLOYEE", nativeQuery= true)
 	    List<Object[]> getEmployeeCountByDepartment();
 	
 }
