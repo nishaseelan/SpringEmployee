@@ -22,7 +22,7 @@ public class Employeecontroller {
 	@Autowired
 	Employeeservice empser;
 
-	@GetMapping("/findll")
+	@GetMapping("/fingSll")
 	List<Employee> getMethod() {
 		return empser.getall();
 	}
